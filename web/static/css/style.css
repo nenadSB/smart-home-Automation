@@ -1,0 +1,71 @@
+/* General body styling */
+body {
+    background-color: 	#000000;  /* Very dark grey background */
+    color: #d3d3d3;             /* Light grey text */
+    font-family: Arial, sans-serif; /* Simple, clean font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #d3d3d3;             /* Light grey color for headings */
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;             /* Slightly larger text for the list items */
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+select, input[type="number"], button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: 	#282828;  /* Lighter grey background for inputs/selects */
+    color: #d3d3d3;             /* Light grey text inside inputs */
+    border: 1px solid #444;     /* Darker grey border around the fields */
+}
+
+
+button {
+    background-color: 	#282828; /* Green button background */
+    color: white;             /* White text */
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkred; /* Darker green when hovering */
+}
+
+button:focus {
+    outline: none;
+}
+
+h1, h2, ul {
+    margin: 20px 0;
+}
+
+form {
+    background-color: #101010 ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}

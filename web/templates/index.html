@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Automation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Smart Home Automation System!</h1>
+    
+    <h2>Devices</h2>
+    <ul>
+        <li>Temperature Sensor: <span id="temperature-status">Loading...</span></li>
+        <li>Smart Light: <span id="light-status">Loading...</span></li>
+        <li>Smart Thermostat: <span id="thermostat-status">Loading...</span></li>
+        <li>Motion Sensor: <span id="motion-status">Loading...</span></li>
+        <li>Smart Plug: <span id="plug-status">Loading...</span></li>
+        <li>Door/Window Sensor: <span id="door-status">Loading...</span></li>
+        <li>Smoke Detector: <span id="smoke-status">Loading...</span></li>
+    </ul>
+
+    <h2>Control Devices</h2>
+    <form id="control-light">
+        <label for="light">Control Light:</label>
+        <select name="state" id="light">
+            <option value="ON">ON</option>
+            <option value="OFF">OFF</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form id="control-plug">
+        <label for="plug">Control Plug:</label>
+        <select name="state" id="plug">
+            <option value="ON">ON</option>
+            <option value="OFF">OFF</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form id="set-thermostat">
+        <label for="thermostat">Set Thermostat Temperature:</label>
+        <input type="number" name="temperature" id="thermostat" step="0.1" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
